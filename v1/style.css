@@ -79,9 +79,9 @@ i{
 
 .header-container{
     display: flex;
-    height: 50mm;
+    height: 45mm;
     background: var(--primary-color);
-    background-image: linear-gradient( to right, var(--primary-color), var(--primary-color) 20%, var(--primary-contrast-color) 20%, var(--primary-contrast-color) 100% );        
+    background-image: linear-gradient( to right, var(--primary-color), var(--primary-color) 20%, var(--primary-contrast-color) 20%, var(--primary-contrast-color) 100% );
     flex-direction: row;
     align-items: center;
 }
@@ -103,7 +103,7 @@ i{
 }
 
 .name-and-contact {
-    width: 90%;
+    width: 91%;
     background: var(--primary-contrast-color);
     padding: 2mm;
 }
@@ -137,10 +137,10 @@ article{
 }
 
 
-.right-section{    
+.right-section{
     width:30%;
-    height:calc(100% - 10mm);
-    padding:5mm;    
+    height: calc(100% - 5mm);
+    padding:5mm;
     background-color:#f3f3f3;
 }
 
@@ -284,5 +284,3 @@ article{
     margin:0;
     padding-left:7.5mm;
 }
-    
-  
