@@ -1,0 +1,288 @@
+:root{
+    --primary-color:#232f3e;
+    --secondary-color:#232f3e;
+    /*--secondary-color:#f90;*/
+    --primary-contrast-color:#fff;
+    --secondary-contrast-color:#fff;
+    --primary-text-color:#444;
+    --secondary-text-color:#595959;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(../fonts/Roboto-Regular.woff) format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto-Black';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Black'), url(../fonts/Roboto-Black.woff) format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Bold'), url(../fonts/Roboto-Bold.woff) format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Thin'), url(../fonts/Roboto-Thin.woff) format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Light'), url(../fonts/Roboto-Light.woff) format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Medium'), url(../fonts/Roboto-Medium.woff) format('woff2');
+}
+
+@page {
+    size: A4;
+    margin: 0;
+  }
+  
+html{
+    width: 210mm;
+    height: 297mm;
+    margin:auto;
+    background-color:#cccccc;
+}
+
+body {
+    width: 100%;
+    height:100%;
+    margin:0;
+    color:var(--primary-text-color);
+    font-family: Roboto-Light, Arial, Helvetica, sans-serif;
+    font-size: 4mm;
+    line-height: 1.43;
+    background-color:#ffffff;
+}
+
+i{
+    color:var(--primary-color);
+}
+
+.header-container{
+    display: flex;
+    height: 50mm;
+    background: var(--primary-color);
+    background-image: linear-gradient( to right, var(--primary-color), var(--primary-color) 20%, var(--primary-contrast-color) 20%, var(--primary-contrast-color) 100% );        
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-header{
+    display: flex;
+    width: 70%;
+    height: 30mm;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.right-header{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-and-contact {
+    width: 90%;
+    background: var(--primary-contrast-color);
+    padding: 2mm;
+}
+
+.full-name {
+    color: var(--primary-color);
+    font-size: 2.5em;
+}
+
+.contact-details {
+    color: var(--secondary-text-color);
+    font-size: 0.875em;
+    line-height: 1.5;
+    margin-top:2mm;
+}
+
+.contact-address{
+    display: none;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 50mm);
+}
+
+.left-section{
+    width:70%;
+    height:calc(100% - 10mm);
+    padding:5mm;    
+}
+
+
+.right-section{    
+    width:30%;
+    height:calc(100% - 10mm);
+    padding:5mm;    
+    background-color:#f3f3f3;
+}
+
+
+.photo{
+    width: 40mm;
+    height: 40mm;
+    border-radius: 50%;
+    /* filter: grayscale(100%); */
+}
+
+.resume-section:not(:first-child){
+    margin-top:5mm;
+}
+
+.resume-section .header{
+    color:var(--primary-color);
+    text-transform: none;
+    font-weight: 600;
+}
+
+.skill{
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-contrast-color);
+    padding: 1mm 1.5mm;
+    border-radius: 1.5mm;
+    font-size: 0.75em;
+    display: inline-block;
+    margin-top: 1mm;
+}
+
+.work-experience-container {
+    padding: 2mm;
+}
+
+.work-experience {
+    position: relative;
+    min-height: 15mm;
+    margin-top: 0.5mm;    
+}
+
+.work-experience:not(:last-child){
+    border-left: 1px solid var(--secondary-text-color);
+    padding-bottom: 5mm;
+}
+
+.work-experience-marker {
+    position: absolute;
+    width: 3mm;
+    height: 3mm;
+    border-radius: 50%;
+    left: -2mm;
+    top: 0;
+    color: transparent;
+    border: 2px solid var(--secondary-color);
+    background: #fff;
+}
+
+.work-experience-content {
+    margin-left: 3mm;
+}
+
+.work-experience-row .time-period,
+.work-experience-row .job-location
+{
+    width:50%;
+    font-size: 0.75em;
+    color: var(--secondary-text-color);
+}
+
+.work-experience-row .job-location{
+    border-right: 1px solid #ccc;
+    padding-right: 5px;
+}
+
+.designation {
+    font-size: 0.85em;
+}
+
+.responsibilities{
+    padding-left:7.5mm;
+    font-size: 0.8em;
+}
+
+.qualification {
+    display: flex;
+    margin-top: 2mm;
+}
+
+.pic {
+    font-size: 1em;
+    padding: 2mm;
+}
+
+.title {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.school {
+    font-size: 0.8em;
+    /* font-style: italic; */
+}
+
+.batch {
+    font-size: 0.8em;
+}
+
+.reference {
+    display: flex;
+    margin-top: 2mm;
+}
+
+.reference-name {
+    font-size: 0.9em;
+}
+
+.reference .reference-position,
+.reference .contact-phone,
+.reference .contact-email {
+    font-size: 0.75em;
+}
+
+.languages,
+.about-me,
+.address,
+.projects{
+    font-size: 0.8em;
+}
+
+.project {
+    margin: 2mm 0;
+}
+
+.project-title{
+    font-weight: 600;
+}
+
+.project-details{
+    margin:0;
+    padding-left:7.5mm;
+}
+    
+  
