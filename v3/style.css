@@ -133,14 +133,14 @@ article{
 .left-section{
     width:70%;
     height:calc(100% - 10mm);
-    padding:5mm;    
+    padding:4.75mm;    
 }
 
 
 .right-section{    
     width:30%;
     height:calc(100% - 10mm);
-    padding:5mm;    
+    padding:4.75mm;    
     background-color:#f3f3f3;
 }
 
