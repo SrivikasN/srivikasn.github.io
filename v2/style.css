@@ -107,17 +107,17 @@ article{
 }
 
 .left-section{
-    width:30%;
+    width: 33%;
     height:calc(100% - 10mm);
-    padding:5mm;    
-    background-color:#f3f3f3;   
+    padding:5mm;
+    background-color:#f3f3f3;
 }
 
 
-.right-section{  
-	width:70%;
-    height:calc(100% - 10mm);
-    padding:5mm;    
+.right-section{
+	width: 67%;
+	height:calc(100% - 10mm);
+	padding: 5mm 3mm;
 }
 
 .photo-container{
@@ -263,5 +263,3 @@ article{
     margin:0;
     padding-left:7.5mm;
 }
-    
-  

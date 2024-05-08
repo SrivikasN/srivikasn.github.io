@@ -131,16 +131,16 @@ article{
 }
 
 .left-section{
-    width:70%;
+    width: 67%;
     height:calc(100% - 10mm);
-    padding:4.75mm;    
+    padding: 4.75mm 3mm;
 }
 
 
-.right-section{    
-    width:30%;
+.right-section{
+    width: 33%;
     height:calc(100% - 10mm);
-    padding:4.75mm;    
+    padding:4.75mm;
     background-color:#f3f3f3;
 }
 
@@ -284,5 +284,3 @@ article{
     margin:0;
     padding-left:7.5mm;
 }
-    
-  
